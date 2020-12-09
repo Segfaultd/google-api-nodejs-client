@@ -323,15 +323,15 @@ export namespace content_v2_1 {
    */
   export interface Schema$AccountLabel {
     /**
-     * Output only. Immutable. The ID of account this label belongs to.
+     * Immutable. The ID of account this label belongs to.
      */
     accountId?: string | null;
     /**
-     * Description for this label.
+     * The description of this label.
      */
     description?: string | null;
     /**
-     * Output only. Immutable. The ID of the label.
+     * Output only. The ID of the label.
      */
     labelId?: string | null;
     /**
@@ -420,7 +420,7 @@ export namespace content_v2_1 {
      */
     linkType?: string | null;
     /**
-     * List of provided services.
+     * Provided services. Acceptable values are: - "`shoppingAdsProductManagement`" - "`shoppingAdsOther`" - "`shoppingActionsProductManagement`" - "`shoppingActionsOrderManagement`" - "`shoppingActionsOther`"
      */
     services?: string[] | null;
   }
@@ -1749,7 +1749,7 @@ export namespace content_v2_1 {
      */
     errors?: Schema$Errors;
     /**
-     * The the list of accessible GMB accounts.
+     * The list of accessible GMB accounts.
      */
     gmbAccounts?: Schema$GmbAccounts;
     /**
@@ -5252,6 +5252,10 @@ export namespace content_v2_1 {
      * Filter by the offer id.
      */
     offerIdMatcher?: Schema$RepricingRuleEligibleOfferMatcherStringMatcher;
+    /**
+     * When true, the rule won't be applied to offers with active promotions.
+     */
+    skipWhenOnPromotion?: boolean | null;
   }
   /**
    * Matcher by string attributes.
@@ -5574,7 +5578,7 @@ export namespace content_v2_1 {
      */
     deliveryDate?: string | null;
     /**
-     * Type of the return method. Acceptable values are: - "`byMail`" - "`contactCustomerSupport`" - "`returnless`"
+     * Type of the return method. Acceptable values are: - "`byMail`" - "`contactCustomerSupport`" - "`returnless`" - "`inStore`"
      */
     returnMethodType?: string | null;
     /**
@@ -5718,7 +5722,7 @@ export namespace content_v2_1 {
   export interface Schema$SettlementTransactionAmount {
     commission?: Schema$SettlementTransactionAmountCommission;
     /**
-     * The description of the event. Acceptable values are: - "`taxWithhold`" - "`principal`" - "`principalAdjustment`" - "`shippingFee`" - "`merchantRemittedSalesTax`" - "`googleRemittedSalesTax`" - "`merchantCoupon`" - "`merchantCouponTax`" - "`merchantRemittedDisposalTax`" - "`googleRemittedDisposalTax`" - "`merchantRemittedRedemptionFee`" - "`googleRemittedRedemptionFee`" - "`eeeEcoFee`" - "`furnitureEcoFee`" - "`copyPrivateFee`" - "`eeeEcoFeeCommission`" - "`furnitureEcoFeeCommission`" - "`copyPrivateFeeCommission`" - "`principalRefund`" - "`principalRefundTax`" - "`itemCommission`" - "`adjustmentCommission`" - "`shippingFeeCommission`" - "`commissionRefund`" - "`damaged`" - "`damagedOrDefectiveItem`" - "`expiredItem`" - "`faultyItem`" - "`incorrectItemReceived`" - "`itemMissing`" - "`qualityNotExpected`" - "`receivedTooLate`" - "`storePackageMissing`" - "`transitPackageMissing`" - "`unsuccessfulDeliveryUndeliverable`" - "`wrongChargeInStore`" - "`wrongItem`" - "`returns`" - "`undeliverable`" - "`refundFromMerchant`" - "`returnLabelShippingFee`"
+     * The description of the event. Acceptable values are: - "`taxWithhold`" - "`principal`" - "`principalAdjustment`" - "`shippingFee`" - "`merchantRemittedSalesTax`" - "`googleRemittedSalesTax`" - "`merchantCoupon`" - "`merchantCouponTax`" - "`merchantRemittedDisposalTax`" - "`googleRemittedDisposalTax`" - "`merchantRemittedRedemptionFee`" - "`googleRemittedRedemptionFee`" - "`eeeEcoFee`" - "`furnitureEcoFee`" - "`copyPrivateFee`" - "`eeeEcoFeeCommission`" - "`furnitureEcoFeeCommission`" - "`copyPrivateFeeCommission`" - "`principalRefund`" - "`principalRefundTax`" - "`itemCommission`" - "`adjustmentCommission`" - "`shippingFeeCommission`" - "`commissionRefund`" - "`damaged`" - "`damagedOrDefectiveItem`" - "`expiredItem`" - "`faultyItem`" - "`incorrectItemReceived`" - "`itemMissing`" - "`qualityNotExpected`" - "`receivedTooLate`" - "`storePackageMissing`" - "`transitPackageMissing`" - "`unsuccessfulDeliveryUndeliverable`" - "`wrongChargeInStore`" - "`wrongItem`" - "`returns`" - "`undeliverable`" - "`refundFromMerchant`" - "`returnLabelShippingFee`" - "`pspFee`"
      */
     description?: string | null;
     /**
