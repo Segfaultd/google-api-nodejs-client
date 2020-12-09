@@ -141,6 +141,7 @@ export {dfareporting_v3_3} from './apis/dfareporting/v3.3';
 export {dfareporting_v3_4} from './apis/dfareporting/v3.4';
 export {dialogflow_v2} from './apis/dialogflow/v2';
 export {dialogflow_v2beta1} from './apis/dialogflow/v2beta1';
+export {dialogflow_v3} from './apis/dialogflow/v3';
 export {dialogflow_v3beta1} from './apis/dialogflow/v3beta1';
 export {digitalassetlinks_v1} from './apis/digitalassetlinks/v1';
 export {discovery_v1} from './apis/discovery/v1';
@@ -277,6 +278,7 @@ export {serviceconsumermanagement_v1} from './apis/serviceconsumermanagement/v1'
 export {serviceconsumermanagement_v1beta1} from './apis/serviceconsumermanagement/v1beta1';
 export {servicecontrol_v1} from './apis/servicecontrol/v1';
 export {servicecontrol_v2} from './apis/servicecontrol/v2';
+export {servicedirectory_v1} from './apis/servicedirectory/v1';
 export {servicedirectory_v1beta1} from './apis/servicedirectory/v1beta1';
 export {servicemanagement_v1} from './apis/servicemanagement/v1';
 export {servicenetworking_v1} from './apis/servicenetworking/v1';
