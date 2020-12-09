@@ -1330,7 +1330,7 @@ export namespace servicenetworking_v1beta {
      */
     billing?: Schema$Billing;
     /**
-     * This field is obsolete. Its value must be set to `3`.
+     * Deprecated. The service config compiler always sets this field to `3`.
      */
     configVersion?: number | null;
     /**
